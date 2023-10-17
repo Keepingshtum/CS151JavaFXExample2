@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo2.CalculatorController">
+  <GridPane alignment="TOP_CENTER" AnchorPane.topAnchor="10">
+    <TextField fx:id="displayField" style="-fx-font-size: 18px;"/>
+  </GridPane>
+  <GridPane alignment="BOTTOM_CENTER" AnchorPane.bottomAnchor="250">
+    <Button text="7" onAction="#appendDigit" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Button text="8" onAction="#appendDigit" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Button text="9" onAction="#appendDigit" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <Button text="/" onAction="#appendOperator" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+    <Button text="4" onAction="#appendDigit" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Button text="5" onAction="#appendDigit" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Button text="6" onAction="#appendDigit" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <Button text="*" onAction="#appendOperator" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+    <Button text="1" onAction="#appendDigit" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <Button text="2" onAction="#appendDigit" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Button text="3" onAction="#appendDigit" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+    <Button text="-" onAction="#appendOperator" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+    <Button text="0" onAction="#appendDigit" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Button text="C" onAction="#clearDisplay" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Button text="=" onAction="#calculateResult" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+    <Button text="+" onAction="#appendOperator" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+  </GridPane>
+</AnchorPane>
